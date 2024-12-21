@@ -7,14 +7,14 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Bitcoin, EclipseIcon as Ethereum} from 'lucide-react'
+import { Bitcoin, EclipseIcon as Ethereum } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 
 export default function LoginScreen() {
   const [activeTab, setActiveTab] = useState('login')
 
   const router = useRouter()
-  const handelSubmit = (e:React.FormEvent<HTMLFormElement>)=>{
+  const handelSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     router.push("/home")
   }
@@ -43,7 +43,7 @@ export default function LoginScreen() {
               <TabsTrigger value="signup">Sign Up</TabsTrigger>
             </TabsList>
             <TabsContent value="login">
-              <form onSubmit={(e)=>handelSubmit(e)}>
+              <form onSubmit={(e) => handelSubmit(e)}>
                 <div className="space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="email">Email</Label>
