@@ -1,4 +1,4 @@
-import { Calendar, ChartCandlestick, CircleDollarSign, Home, Inbox, Search, Settings, StickyNote } from "lucide-react"
+import {  ChartCandlestick, CircleDollarSign, Home,   Settings, StickyNote } from "lucide-react"
 
 import {
   Sidebar,
